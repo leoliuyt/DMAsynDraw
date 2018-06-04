@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A4CF61839BA5893B937636A /* libPods-DMAsynDraw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D79C9ED3E023371FD641211 /* libPods-DMAsynDraw.a */; };
+		6BA6C04F20C5504100E0A581 /* DMAsynDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C04E20C5504100E0A581 /* DMAsynDisplayView.m */; };
+		6BA6C05220C5506900E0A581 /* DMAsynDisplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C05120C5506900E0A581 /* DMAsynDisplayLayer.m */; };
 		6BACEE0020BBEF2900C80982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEDFF20BBEF2900C80982 /* AppDelegate.m */; };
 		6BACEE0320BBEF2900C80982 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEE0220BBEF2900C80982 /* ViewController.m */; };
 		6BACEE0620BBEF2900C80982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEE0420BBEF2900C80982 /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		1D79C9ED3E023371FD641211 /* libPods-DMAsynDraw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DMAsynDraw.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4C5FAEBFB8234BD717C383 /* Pods-DMAsynDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMAsynDraw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMAsynDraw/Pods-DMAsynDraw.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA6C04D20C5504100E0A581 /* DMAsynDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAsynDisplayView.h; sourceTree = "<group>"; };
+		6BA6C04E20C5504100E0A581 /* DMAsynDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAsynDisplayView.m; sourceTree = "<group>"; };
+		6BA6C05020C5506900E0A581 /* DMAsynDisplayLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAsynDisplayLayer.h; sourceTree = "<group>"; };
+		6BA6C05120C5506900E0A581 /* DMAsynDisplayLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAsynDisplayLayer.m; sourceTree = "<group>"; };
 		6BACEDFB20BBEF2900C80982 /* DMAsynDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMAsynDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BACEDFE20BBEF2900C80982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BACEDFF20BBEF2900C80982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				6BACEE1420BC077800C80982 /* black@2x.png */,
 				6BACEE0120BBEF2900C80982 /* ViewController.h */,
 				6BACEE0220BBEF2900C80982 /* ViewController.m */,
+				6BA6C04D20C5504100E0A581 /* DMAsynDisplayView.h */,
+				6BA6C04E20C5504100E0A581 /* DMAsynDisplayView.m */,
+				6BA6C05020C5506900E0A581 /* DMAsynDisplayLayer.h */,
+				6BA6C05120C5506900E0A581 /* DMAsynDisplayLayer.m */,
 				6BACEE0420BBEF2900C80982 /* Main.storyboard */,
 				6BACEE0720BBEF2A00C80982 /* Assets.xcassets */,
 				6BACEE0920BBEF2A00C80982 /* LaunchScreen.storyboard */,
@@ -194,6 +204,8 @@
 				6BACEE0320BBEF2900C80982 /* ViewController.m in Sources */,
 				6BACEE0E20BBEF2A00C80982 /* main.m in Sources */,
 				6BACEE0020BBEF2900C80982 /* AppDelegate.m in Sources */,
+				6BA6C04F20C5504100E0A581 /* DMAsynDisplayView.m in Sources */,
+				6BA6C05220C5506900E0A581 /* DMAsynDisplayLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +350,10 @@
 				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = DMAsynDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMAsynDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,7 +369,10 @@
 				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = DMAsynDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DMAsynDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

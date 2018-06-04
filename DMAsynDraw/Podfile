@@ -6,6 +6,6 @@ target 'DMAsynDraw' do
   # use_frameworks!
 
   # Pods for DMAsynDraw
-  pod 'AsyncDisplayKit', '~> 2.2.1'
+#  pod 'AsyncDisplayKit', '~> 2.2.1'
   pod 'YYKit', '~> 1.0.9'
 end
