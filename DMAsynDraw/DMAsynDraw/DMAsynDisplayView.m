@@ -15,6 +15,8 @@
 {
     self = [super init];
     self.layer.delegate = self;
+    
+    NSLog(@"aaa");
     return self;
 }
 //- (CALayer *)layer
