@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 @property (nonatomic, strong) NSTimer *timer;
+
+@property (nonatomic, strong) DMAsynDisplayView *asynDisplayView;
 @end
 
 @implementation ViewController
@@ -18,10 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DMAsynDisplayView *asynDisplayView = [[DMAsynDisplayView alloc] init];
+    self.asynDisplayView = [[DMAsynDisplayView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    self.asynDisplayView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:self.asynDisplayView];
     
-    [asynDisplayView setNeedsDisplay];
+    [self.asynDisplayView setNeedsDisplay];
     
+}
+
+- (IBAction)pressAction:(id)sender
+{
+    self.asynDisplayView.frame = CGRectMake(10, 30, 100, 100);
+    [self.asynDisplayView setNeedsDisplay];
+//    [self.asynDisplayView.layer setNeedsDisplay];
+//    [self.asynDisplayView.layer display];
 }
 
 - (void)test1

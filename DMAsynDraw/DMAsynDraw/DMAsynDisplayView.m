@@ -11,9 +11,10 @@
 @interface DMAsynDisplayView()<CALayerDelegate>
 @end
 @implementation DMAsynDisplayView
-- (instancetype)init
+
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     self.layer.delegate = self;
     
     NSLog(@"aaa");

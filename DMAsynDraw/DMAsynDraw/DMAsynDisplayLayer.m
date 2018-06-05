@@ -13,6 +13,15 @@
 - (void)drawInContext:(CGContextRef)ctx
 {
     [super drawInContext:ctx];
+//    self.frame = CGRectMake(40, 60, 100, 100);
 }
 
+- (void)setNeedsDisplay
+{
+    [super setNeedsDisplay];
+}
+- (void)display
+{
+    [super display];
+}
 @end
