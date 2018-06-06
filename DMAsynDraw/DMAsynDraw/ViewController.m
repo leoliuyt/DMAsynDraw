@@ -24,7 +24,7 @@
     self.asynDisplayView.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.asynDisplayView];
     
-    [self.asynDisplayView setNeedsDisplay];
+//    [self.asynDisplayView setNeedsDisplay];
     
 }
 
